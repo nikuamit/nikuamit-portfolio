@@ -7,14 +7,32 @@ export function SiteFooter() {
         <p>
           © {new Date().getFullYear()} {profile.name}
         </p>
-        <a
-          href={profile.linkedin}
-          target="_blank"
-          rel="noreferrer noopener"
-          className="transition-colors hover:text-foreground"
-        >
-          linkedin.com/in/aks1993
-        </a>
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+          <a
+            href={profile.linkedin}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="transition-colors hover:text-foreground"
+          >
+            linkedin.com/in/aks1993
+          </a>
+          <a
+            href="https://nikuamit.github.io"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="transition-colors hover:text-foreground"
+          >
+            nikuamit.github.io
+          </a>
+          <a
+            href={profile.github}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="transition-colors hover:text-foreground"
+          >
+            github.com/nikuamit
+          </a>
+        </div>
       </div>
     </footer>
   );
