@@ -41,13 +41,19 @@ export type Metric = {
   label: string;
 };
 
+export type LeadershipSignal = {
+  tag: string;
+  title: string;
+  description: string;
+};
+
 export const profile = {
   name: "Amit Kumar Sahu",
   location: "Bengaluru, India",
   linkedin: "https://www.linkedin.com/in/aks1993",
   github: "https://github.com/nikuamit",
-  headline: "Senior / Lead Data Engineer",
-  headlineDetail: "9+ years · Lakehouse, streaming & semantic data platforms",
+  headline: "Lead Data Engineer — building lakehouse & semantic platforms at scale",
+  headlineDetail: "Senior / Lead / Staff roles · 9+ years · Pharma & SaaS",
   summary:
     "Senior Data Engineer with 9+ years building enterprise-grade data lakes, lakehouse platforms and semantic analytics layers across pharma (Eli Lilly, 200K+ clinical assets) and SaaS (Kenko AI, 500+ multi-tenant clients). Consistent 40–60% improvements in pipeline efficiency, data quality and cost.",
   status:
@@ -60,6 +66,27 @@ export const profile = {
     { value: "98%", label: "SLA achieved, up from 70% (Kenko AI)" },
   ] satisfies Metric[],
 
+  leadership: [
+    {
+      tag: "Team leadership",
+      title: "Led a 5-member team — AspireNXT",
+      description:
+        "Owned delivery of AWS data lake pipelines across finance, industrial IoT, and healthcare clients — delivery velocity +30% — plus weekly knowledge-sharing sessions that lifted team productivity +20% and cut onboarding time −50%.",
+    },
+    {
+      tag: "Cross-team standards",
+      title: "Standardised platforms for 5+ teams — Eli Lilly",
+      description:
+        "Built 20+ reusable Data Products and DWS APIs for the Enterprise Data Backbone, adopted across 5+ teams — cut incident response time −40% via ServiceNow integration.",
+    },
+    {
+      tag: "Platform architecture",
+      title: "Architected a multi-tenant lakehouse — Kenko AI",
+      description:
+        "Designed the lakehouse and Cube Cloud semantic layer serving 500+ clients end-to-end — query latency −45%, SLA 70%→98%, BI licensing costs −35%.",
+    },
+  ] satisfies LeadershipSignal[],
+
   experience: [
     {
       company: "Kenko AI",
@@ -69,7 +96,7 @@ export const profile = {
       location: "Bengaluru",
       bullets: [
         "Architected AWS Data Lakehouse for 500+ fitness-studio clients via DMS CDC → S3 Bronze → Apache Iceberg Silver (S3 Tables) → Athena Gold: query latency −45%, SLA 70%→98%.",
-        "Designed Cube Cloud LDM: 18 cubes, 11 pre-aggregated views, 58 KPIs; JWT multi-tenant RLS for 500+ operators.",
+        "Designed Cube Cloud LDM: 18 cubes, 11 pre-aggregated views, 58 KPIs across Finance, Memberships, Classes, and Marketing; JWT-based multi-tenant RLS for 500+ operators.",
         "Built 9-check DQ framework with SNS alerting: incidents −60%, confidence 82%→97%.",
         "Delivered 20-table Gold analytics layer replacing GoodData: BI licensing −35%.",
         "Role eliminated in a company restructuring.",
@@ -93,7 +120,7 @@ export const profile = {
       industry: "Pharma",
       location: "Bengaluru",
       bullets: [
-        "Standardised 20+ reusable Data Products/DWS APIs (PySpark, Airflow) across 5+ teams: incident response −40%.",
+        "Standardised 20+ reusable Data Products/DWS APIs for the Enterprise Data Backbone (PySpark, Airflow) across 5+ teams: incident response −40% via ServiceNow integration.",
         "Migrated 5+ TB CTMS clinical data IMPACT→Veeva Vault: onboarding +60% across 6+ trials.",
         "Axon Data Catalog for 200K+ clinical assets: discoverability +50%, validation +30%.",
         "Won Lilly Global Ideas & Innovation Award for LillyTV (scaled to 1,500+ employees).",
@@ -108,6 +135,7 @@ export const profile = {
       bullets: [
         "Led 5-member team, AWS data lake pipelines (finance/IoT/healthcare), velocity +30%.",
         "Migrated 10+TB, latency −40%, infra cost −25%.",
+        "Established weekly knowledge-sharing sessions: team productivity +20%, onboarding time −50%.",
       ],
     },
     {
@@ -117,7 +145,7 @@ export const profile = {
       industry: "IoT",
       location: "Bengaluru",
       bullets: [
-        "Span Park smart parking (Python, Raspberry Pi, PostgreSQL, Azure IoT Hub): search time −50%, responsiveness +40%.",
+        "Span Park smart parking (Python, C, Raspberry Pi, PostgreSQL, Azure IoT Hub): real-time availability tracking cut parking search time −50%.",
       ],
     },
     {
@@ -127,7 +155,7 @@ export const profile = {
       industry: "Automotive Manufacturing",
       location: "Bengaluru",
       bullets: [
-        "ETL automation across 12+ projects: downtime −20%, manual effort −30%.",
+        "Automated critical ETL pipelines with RCA and on-call support across 12+ projects: downtime −20%, automation efficiency +15%, manual effort −30%.",
       ],
     },
   ] satisfies ExperienceEntry[],
@@ -213,7 +241,7 @@ export const profile = {
       problem:
         "500+ fitness-studio clients needed fast, reliable analytics on top of operational data scattered across source systems, with strict per-tenant data isolation.",
       architecture:
-        "AWS Data Lakehouse: DMS CDC → S3 Bronze → Apache Iceberg Silver (S3 Tables) → Athena Gold. Semantic layer on Cube Cloud with an 18-cube LDM, 11 pre-aggregated views and 58 KPIs, secured with JWT-based multi-tenant row-level security for 500+ operators.",
+        "AWS Data Lakehouse: DMS CDC → S3 Bronze → Apache Iceberg Silver (S3 Tables) → Athena Gold. Semantic layer on Cube Cloud with an 18-cube LDM, 11 pre-aggregated views and 58 KPIs across Finance, Memberships, Classes, and Marketing, secured with JWT-based multi-tenant row-level security for 500+ operators.",
       role:
         "Architected the lakehouse pipeline end-to-end and designed the Cube Cloud logical data model and multi-tenant security scheme.",
       outcome: "Query latency down 45%; SLA improved from 70% to 98%.",

@@ -3,6 +3,7 @@ import { profile } from "@/lib/profile";
 import { ThemeToggle } from "./theme-toggle";
 
 const NAV_LINKS = [
+  { href: "#leadership", label: "Leadership" },
   { href: "#experience", label: "Experience" },
   { href: "#case-studies", label: "Case Studies" },
   { href: "#skills", label: "Skills" },

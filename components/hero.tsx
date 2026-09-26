@@ -18,18 +18,25 @@ export function Hero() {
           Available immediately
         </div>
 
-        <h1
-          className="animate-fade-up max-w-3xl text-4xl font-semibold tracking-tight text-balance sm:text-5xl md:text-6xl"
-          style={{ animationDelay: "80ms" }}
+        <p
+          className="animate-fade-up text-sm font-medium text-muted"
+          style={{ animationDelay: "40ms" }}
         >
           {profile.name}
+        </p>
+
+        <h1
+          className="animate-fade-up mt-2 max-w-3xl text-4xl font-semibold tracking-tight text-balance sm:text-5xl md:text-6xl"
+          style={{ animationDelay: "80ms" }}
+        >
+          {profile.headline}
         </h1>
 
         <p
           className="animate-fade-up mt-4 max-w-2xl text-lg font-medium text-foreground/80 sm:text-xl"
           style={{ animationDelay: "140ms" }}
         >
-          {profile.headline} · {profile.headlineDetail}
+          {profile.headlineDetail}
         </p>
 
         <p

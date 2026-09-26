@@ -1,6 +1,7 @@
 import { SiteHeader } from "@/components/site-header";
 import { Hero } from "@/components/hero";
 import { MetricsBento } from "@/components/metrics-bento";
+import { LeadershipSignals } from "@/components/leadership-signals";
 import { ExperienceTimeline } from "@/components/experience-timeline";
 import { CaseStudies } from "@/components/case-studies";
 import { Skills } from "@/components/skills";
@@ -15,6 +16,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <MetricsBento />
+        <LeadershipSignals />
         <ExperienceTimeline />
         <CaseStudies />
         <Skills />
